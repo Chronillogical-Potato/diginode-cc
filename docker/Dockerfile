@@ -12,7 +12,7 @@ RUN CGO_ENABLED=0 go build -ldflags="-s -w -X main.Version=$(git describe --tags
     -o /diginode-cc ./cmd/diginode-cc
 
 ## Build stage - React frontend
-FROM node:20-alpine AS frontend-builder
+FROM node:26.12.1-alpine AS frontend-builder
 
 WORKDIR /build
 COPY web/package.json web/package-lock.json ./
