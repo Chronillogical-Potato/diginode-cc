@@ -22,8 +22,8 @@ type PlanespottersResult struct {
 // planespottersAPIResponse is the raw API response.
 type planespottersAPIResponse struct {
 	Photos []struct {
-		Src         string `json:"src"`
-		Link        string `json:"link"`
+		Src          string `json:"src"`
+		Link         string `json:"link"`
 		Photographer string `json:"photographer"`
 	} `json:"photos"`
 }
@@ -66,7 +66,7 @@ func (c *PlanespottersClient) Lookup(icao24 string) (*PlanespottersResult, error
 	if err != nil {
 		return nil, err
 	}
-	req.Header.Set("User-Agent", "DigiNode-CC/1.0")
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36")
 
 	resp, err := c.client.Do(req)
 	if err != nil {

@@ -94,7 +94,7 @@ func defaultProviders() map[string]*TileProvider {
 			MaxZoom:     22,
 			NeedsToken:  true,
 			ImageType:   "png",
-			UserAgent:   "DigiNode-CC/1.0",
+			UserAgent:   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
 		},
 		"osm": {
 			Name:        "osm",
@@ -102,14 +102,14 @@ func defaultProviders() map[string]*TileProvider {
 			Subdomains:  []string{"a", "b", "c"},
 			MaxZoom:     19,
 			ImageType:   "png",
-			UserAgent:   "DigiNode-CC/1.0 (github.com/karamble/diginode-cc)",
+			UserAgent:   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
 		},
 		"esri": {
 			Name:        "esri",
 			URLTemplate: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
 			MaxZoom:     18,
 			ImageType:   "jpeg",
-			UserAgent:   "DigiNode-CC/1.0",
+			UserAgent:   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
 		},
 	}
 }
